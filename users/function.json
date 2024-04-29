@@ -1,0 +1,27 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "name": "users",
+      "direction": "in",
+      "type": "sql",
+      "commandText": "SELECT * FROM [dbo].[User]",
+      "commandType": "Text",
+      "connectionStringSetting": "SqlConnectionString"
+    }
+  ]
+}

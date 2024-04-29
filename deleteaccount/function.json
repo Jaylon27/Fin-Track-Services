@@ -1,0 +1,28 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "name": "account",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "DeleteAccount",
+      "commandType": "StoredProcedure",
+      "parameters":"@id = {id},@user_id = {user_id}",
+      "connectionStringSetting": "SqlConnectionString"
+    }
+  ]
+}
