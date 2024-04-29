@@ -4,6 +4,7 @@ The Financial Management API is a serverless solution designed to manage users' 
 
 # Technologies Used
 Azure Functions: Leveraging serverless compute to handle HTTP requests and execute business logic.
+
 Azure SQL Database: Storing and managing user data securely.
 Python: Backend programming language used for implementing the API logic.
 Bcrypt: Hashing user passwords to ensure secure storage.
