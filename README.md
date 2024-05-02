@@ -32,9 +32,9 @@ The Financial Management API is a serverless solution designed to manage users' 
 **Authorization Checks:** Performs authorization checks to ensure that users can only access their own financial data.
 
 # Usage
-**User Registration:** Send a POST request to /api/register with the required user information in the request body.
+**User Registration:** Send a POST request to https://fintrack.azure-api.net/FinTrackServices/user with the required user information in the request body.
 
-**User Login:** Send a POST request to /api/login with the username and password in the request body to obtain a JWT token.
+**User Login:** Send a POST request to https://fintrack.azure-api.net/FinTrackServices/login with the username and password in the request body to obtain a JWT token.
 
 **Access Protected Endpoints:** Include the JWT token in the Authorization header of subsequent requests to access protected endpoints.
 
