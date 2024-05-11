@@ -1,6 +1,6 @@
-# Financial Management API
+# Financial Tracking Service API
 
-The Financial Management API is a serverless solution designed to manage users' financial data securely. It provides functionalities for user registration, authentication, and management of financial assets such as income, expenses, savings goals, credit cards, and accounts.
+This API is a serverless solution designed to manage users' financial data securely. It provides functionalities for user registration, authentication, and management of financial assets such as income, expenses, savings goals, credit cards, and accounts.
 
 # Technologies Used
 **Azure Functions:** Leveraging serverless compute to handle HTTP requests and execute business logic.
@@ -28,17 +28,6 @@ The Financial Management API is a serverless solution designed to manage users' 
 **Password Hashing:** User passwords are hashed using bcrypt before storing in the database, ensuring that plaintext passwords are never stored.
 
 **JWT-based Authentication:** Implements JWT tokens for user authentication, preventing unauthorized access to protected endpoints.
-
-**Authorization Checks:** Performs authorization checks to ensure that users can only access their own financial data.
-
-# Usage
-**User Registration:** Send a POST request to https://fintrack.azure-api.net/FinTrackServices/user with the required user information in the request body.
-
-**User Login:** Send a POST request to https://fintrack.azure-api.net/FinTrackServices/login with the username and password in the request body to obtain a JWT token.
-
-**Access Protected Endpoints:** Include the JWT token in the Authorization header of subsequent requests to access protected endpoints.
-
-**Manage Financial Data:** Use the API endpoints for managing income sources, expenses, savings goals, credit cards, and accounts.
 
 # Documentation 
 [View Documentation 
